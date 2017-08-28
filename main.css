@@ -1,0 +1,420 @@
+/*		---------- General Styling --------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+body {
+	background: #034;
+	background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/64884main_image_feature_211_jwfull.jpg");
+	background-repeat: no-repeat;
+	background-position: 0% 15%;
+	background-size: cover;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: #FFFC7F;
+}
+.text_container {
+	width: 400px;
+	height: auto;
+	float: left;
+	position: relative;
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px;
+	margin: 15px;
+	color: white;
+}
+
+.image_container {
+	width: auto;
+	height: auto;
+	float: left;
+	/*position: absolute;*/
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px;
+	margin: 15px;
+	color: white;
+}
+
+.full_container {
+	width: 900px;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	padding: 15px;
+	margin: 15px;
+	color: white;
+	justify-content: space-between;
+}
+
+.image_flex {
+	flex: 1;
+	margin: 15px;
+	padding: 15px;
+}
+
+table {
+	border: 3px dotted;
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px;
+}
+
+td {
+	margin: 10px;
+}
+
+/*		---------- Fibonacci Navbar Styling --------- */
+
+.navbar {
+	display: inline;
+	display: -webkit-flex;
+	display: flex;
+	color: white;
+	border: 1px solid white;
+	height: auto;
+	font-weight: 300;
+	overflow: hidden;
+}
+.nav_section {
+	border: 1px dotted rgb(194,169,162);
+	padding-top: 2px;
+	padding-left: 5px;
+}
+.nav_section:hover {
+	color: #ffff77;
+	text-transform: uppercase;
+	font-size: 80%;
+	transition: 2s;
+}
+@media only screen and (max-width: 800px) {
+    .nav_section {
+        font-size: 14px;
+        margin-width: auto;
+    }
+    .nav_section:hover{
+    	font-size: 11px;
+    }
+}
+#phi {
+	flex: 1;
+	background-color: rgba(102,116,129, 0.3);
+}
+#phi:hover {
+	flex: 2;
+	background-color: rgba(102,116,129, 0.5);
+}
+#color {
+	flex: 1;
+	background-color: rgba(156,162,210, 0.3);
+			}
+#color:hover {
+	flex: 3;
+	background-color: rgba(156,162,210, 0.5);	
+}
+#harmony {
+	flex: 2;
+	background-color: rgba(114,125,181, 0.3);
+}
+#harmony:hover {
+	flex: 5;
+	background-color: rgba(114,125,181, 0.5);
+}
+#space {
+	flex: 3;
+	background-color: rgba(194,169,162, 0.3);
+}
+#space:hover {
+	flex: 8;
+	background-color: rgba(194,169,162, 0.5);
+}
+#quantum {
+	flex: 5;
+	background-color: rgba(174,147,136,0.5);
+}
+#quantum:hover {
+	flex: 13;
+	background-color: rgba(174,147,136,0.8);
+	
+}
+
+/*		---------- Header Styling & Animation --------- */
+
+h1 {
+	font-size: 55px;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 36px;
+        margin-width: auto;
+    }
+}
+
+.section{
+	height: 100%;
+	width: auto;
+	border-bottom: 4px dotted black;
+	padding: 21px;
+	margin-left: 55px;
+}
+
+h1:hover {
+		text-shadow: 0 0 10px rgba(255,255,255,0.5) , 0 0 10px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 10px #727DB5 , 0 0 10px #727DB5 , 0 0 20px #727DB5 , 0 0 30px #727DB5;
+}
+p {
+	font-size: 18px;
+	line-height: 125%;
+}
+
+@media only screen and (max-width: 800px) {
+	p {
+    	font-size: 13px;
+    }
+}
+
+div.slide-left{
+	width: 100%;
+	height: 300px;
+	padding-top: 34px;
+	overflow: hidden;
+}
+div.slide-left h1 {
+  animation: slide-left 1.8s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    margin-top: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+/*		---------- Eclipse Audio Controller --------- */
+
+#sun {
+  background: #FFFC7F;
+  box-shadow: 0 0 50px #FFFC7F;
+  width: 150px;
+  height: 150px;
+  margin-top: -200px;
+  top: 25%;
+  left: 25%;
+  border-radius: 50%;
+}
+
+#moon {
+  background: #222;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 50px;
+  border-radius: 50%;
+}
+
+#moon:hover {
+	margin-top: -150px;
+	transition: 2s ease-in;	
+	-webkit-transition: 2s ease-in;
+	-moz-transition: 2s ease-in;
+}
+
+#perc {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: -120px;
+  margin-bottom: 55px;
+  color: white;
+}
+
+/*		---------- CSS Accordion Styling --------- */
+
+.accordion section {
+	height: 113px;
+	overflow: hidden;
+	transition: height 1s;
+}
+
+.accordion section:hover {
+	height: 121px;
+	overflow: hidden;
+	transition: height 1s;
+}
+
+/*		---------- Phi Section --------- */
+
+#phi_section{
+	background-color: rgba(102,116,129, 0.3);
+	display: inline-block;
+}
+
+h2 {
+	font-family: 'Josefin Slab', serif;
+	font-size: 34px;
+}
+
+/*		---------- Color Section --------- */
+
+#color_section{
+	background-color: rgba(156,162,210, 0.3);
+}
+
+/*		---------- Harmony Section --------- */
+
+#harmony_section{
+	background-color: rgba(114,125,181, 0.3);
+}
+
+/*		---------- Space Section --------- */
+
+#space_section{
+	background-color: rgba(194,169,162, 0.3);
+}
+
+/*		---------- Quantum Section --------- */
+
+#quantum_section{
+	background-color: rgba(174,147,136,0.5);
+}
+
+
+/*		---------- Modal --------- */
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 500px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #000;
+	background: -moz-linear-gradient(#000, #034);
+	background: -webkit-linear-gradient(#000, #034);
+	background: -o-linear-gradient(#000, #034);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+.button {
+    background-color:#FFFC7F;
+    border: 5px;
+    height: 250px;
+    width: auto;
+    box-shadow: 10px 10px 10px black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+}
+
+#launchHCL {
+	font-size: 36px;
+	background-color: #FFFC7F;
+	color: black;
+	text-align: center;
+}
+
+#launchHCL:hover {
+	background-color: white;
+	font-size: 38px;
+	transition: 1s;
+}
+
+
+/*		---------- Footer --------- */
+
+.footer {
+	display: inline;
+	display: -webkit-flex;
+	display: flex;
+	color: white;
+	height: auto;
+	background-color: rgba(0,0,0,0.5)
+	margin: 20px;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-bottom: 50px;
+	padding-right: 20px;
+}
+
+.footer h3 {
+	color: #FFFC7F;
+	text-transform: uppercase;
+}
+
+#background_image {
+	flex: 1.618;
+}
+
+.footer a {
+	color: #FFFC7F;
+	font-size: 28;
+}
+
+.footer_section {
+	flex: 1;
+	border: 1px dotted rgb(194,169,162);
+	padding-top: 2px;
+	padding-left: 5px;
+}
+
+#copyright {
+	margin-left: 10px;
+	padding-left: 25px;
+}
+
+.footer small {
+	font-size: 14px;
+}
